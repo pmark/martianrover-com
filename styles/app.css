@@ -16,7 +16,23 @@ body {
 }
 
 a {
-    @apply text-sky-400 hover:text-sky-300 hover:underline bg-slate-800 p-1;
+    @apply text-sky-400 hover:text-sky-300 hover:underline;
+}
+
+a img {
+    margin: auto;
+    display: block;
+    border-radius: 8px;
+    border-width: 2px;
+    @apply shadow-md shadow-neutral-800;
+}
+
+li a {
+    @apply px-4 py-3 bg-slate-800 hover:bg-slate-900 rounded-lg;
+}
+
+li {
+    @apply p-5;
 }
 
 .stack {
@@ -34,12 +50,39 @@ h1.title {
     color: #444;
 }
 
+h2 {
+    color: white;
+    font-size: clamp(16px, 4vw, 24px);
+    font-weight: bold;
+    background-color: #d73f22;
+    margin: 48px 11% 0;
+    padding: 12px;
+}
+
 h3.subtitle {
     font-size: clamp(16px, 3vw, 20px);
     background-color: rgba(255,255,255,.75);
     color: #333;
     font-weight: normal;
     padding: 12px;
-    border-radius: 8px;
-    margin: 48px 11% 24px;
+    margin: 48px 11% 0;
+}
+
+.iframe-container {
+    overflow: hidden;
+    /* 16:9 aspect ratio */
+    padding-top: 56.25%;
+    position: relative;
+    margin-bottom: 48px;
+}
+
+.iframe-container iframe {
+    border: 0;
+    position: absolute;
+    width: calc(80% - 16px);
+    height: calc(80% - 16px);
+    left: calc(10% + 8px);
+    top: 0;
+    border-radius: 4px;
+    @apply shadow-md shadow-neutral-800;
 }

@@ -11,12 +11,12 @@ import type { MetaFunction } from "remix";
 
 import tailwindStylesheetUrl from "./styles/tailwind.css";
 
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet"></link>
+import GA from "./components/GA";
 
 export const links: LinksFunction = () => {
   return [
     { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossOrigin: "true" },
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
     { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap' },
     { rel: 'stylesheet', href: tailwindStylesheetUrl },
     { rel: 'author', href: 'https://www.linkedin.com/in/pmark' },
@@ -31,6 +31,7 @@ export const links: LinksFunction = () => {
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
   title: "MartianRover",
+  description: "mars rover martian news updates",
   viewport: "width=device-width,initial-scale=1",
 });
 
@@ -46,6 +47,7 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <GA />
       </body>
     </html>
   );
