@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { 
+    background: #d73f22 url(/images/mars_curiosity.jpg) no-repeat center center fixed; 
+    color: rgba(255,255,255, 0.5);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    @apply text-center pt-5;
+}
+
+a {
+    @apply text-sky-400 hover:text-sky-300 hover:underline bg-slate-800 p-1;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1.title {
+    -webkit-text-stroke-width: 0.1vw;
+    -webkit-text-stroke-color: white;
+    font-size: 10vw;
+    font-size: clamp(32px, 9vw, 80px);
+    margin: 24px 0;
+    color: #444;
+}
+
+h3.subtitle {
+    font-size: clamp(16px, 3vw, 20px);
+    background-color: rgba(255,255,255,.75);
+    color: #333;
+    font-weight: normal;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 48px 11% 24px;
+}
