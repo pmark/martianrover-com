@@ -424,8 +424,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 html {
-  background: #d73f22 url(/images/mars_curiosity.jpg) no-repeat center center fixed;
-  color: rgba(255,255,255, 0.5);
+  background: #d73f22 url(/images/mars_curiosity.jpg) no-repeat center
+            center fixed;
+  color: rgba(255, 255, 255, 0.5);
   background-size: cover;
 }
 
@@ -503,7 +504,7 @@ h2 {
 
 h3.subtitle {
   font-size: clamp(16px, 3vw, 20px);
-  background-color: rgba(255,255,255,.75);
+  background-color: rgba(255, 255, 255, 0.75);
   color: #333;
   font-weight: normal;
   padding: 12px;
@@ -561,6 +562,11 @@ fieldset ul {
 
 fieldset li {
   padding: 0.25rem;
+}
+
+input {
+  color: black;
+  border: 1px solid orange;
 }
 
 *, ::before, ::after {
