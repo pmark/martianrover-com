@@ -1,3 +1,9 @@
+// import styles from "./styles/dashboard.css";
+
+// export function links() {
+//   return [{ rel: "stylesheet", href: styles }];
+// }
+
 export default function Index() {
   return (
     <div>

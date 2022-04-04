@@ -47,7 +47,7 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
-        <GA />
+        {/* <GA /> */}
       </body>
     </html>
   );

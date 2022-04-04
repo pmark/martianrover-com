@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+
 html { 
     background: #d73f22 url(/images/mars_curiosity.jpg) no-repeat center center fixed; 
     color: rgba(255,255,255, 0.5);
@@ -108,4 +110,6 @@ fieldset ul {
 
 fieldset li {
     @apply p-1;
+}
+
 }
