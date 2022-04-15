@@ -1,17 +1,16 @@
 import {
   Links,
-  LinksFunction,
   LiveReload,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
 } from 'remix';
-import type { MetaFunction } from 'remix';
+import type { MetaFunction, LinksFunction } from 'remix';
 
 import tailwindStylesheetUrl from './styles/tailwind.css';
 
-import GA from './components/GA';
+// import GA from './components/GA';
 
 export const links: LinksFunction = () => {
   return [
