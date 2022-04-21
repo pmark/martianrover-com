@@ -2,14 +2,12 @@ import { useEffect, useState } from 'react';
 // import { setup } from '~/lib/web-audio.client';
 import { setup } from '~/lib/ml5-pitch.client';
 
+import useAudioFFM from '~/lib/use-audio-ffm';
+import useML5PitchDetection from '~/lib/use-ml5-detected-pitch';
+
 const Viz = () => {
-  const [pitch, setPitch] = useState(0);
-
-  useEffect(() => {
-    console.log('vis effect');
-
-    setup(setPitch);
-  }, []);
+  const pitch = useML5DetectedPitch();
+  const ffmData = useAudioFFM();
 
   return (
     <>
